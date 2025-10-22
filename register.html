@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <title>IMBS REGISTRATION</title>
+</head>
+<body>
+     
+     <!---------- NAVIGATION BAR START----------->
+     <nav>
+          <div class="imbs_logo">
+               <a href="index.html"><img src="image/imbs_logo .png"></a>
+          </div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu_btn">
+          <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+             <li><a href="index.html">home</a></li>
+             <li><a href="about.html">about us</a></li>
+             <li><a href="blog.html">blog</a></li>
+             <li><a href="team.html">team</a></li>
+             <li><a href="contact.html">contact us</a></li>
+          </ul>
+     </nav>
+     <!---------- NAVIGATION BAR END----------->
+
+     <div class="form_container">
+
+          <!---------- REGISTRATION FORM START ----------->
+          <form action="php/register.php" method="post">
+               <div class="form">
+                    <h1>online Registration</h1>
+
+                    <div class="name">
+                         <div class="input_group">
+                              <label>First Name <b>*</b> </label>
+                              <input type="text" name="first_name" placeholder="Enter Your First Name" required>
+                         </div>
+                         <div class="input_group">
+                              <label>Last Name <b>*</b></label>
+                              <input type="text" name="last_name" placeholder="Enter Your Last Name" required>
+                         </div>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Email <b>*</b> </label>
+                         <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                    </div>
+
+                    <div class="name">
+                         <div class="input_group">
+                              <label>National Identity Card <b>*</b> </label>
+                              <input type="text" name="nic" placeholder="Enter Your NIC Number" required>
+                         </div>
+                         <div class="input_group">
+                              <label>Mobile Number <b>*</b> </label>
+                              <input type="number" name="mobile_number" placeholder="Enter Your Mobile Number" required>
+                         </div>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Gender <b>*</b> </label>
+                         <select name="gender" required>
+                              <option>Male</option>
+                              <option>Female</option>
+                         </select>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Date Of Birth <b>*</b> </label>
+                         <input type="date" name="dob" required>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Address <b>*</b> </label>
+                         <input type="text" name="address" placeholder="Enter Your Address" required>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Your District <b>*</b> </label>
+                         <select name="district" required>
+                              <option>Kandy</option>
+                              <option>Matale</option>
+                              <option>Nuwara Eliya</option>
+                              <option>Ampara</option>
+                              <option>Batticaloa</option>
+                              <option>Trincomalee</option>
+                              <option>Anuradhapura</option>
+                              <option>Polonnaruwa</option>
+                              <option>Kurunegala</option>
+                              <option>Puttalam</option>
+                              <option>Jaffna</option>
+                              <option>Kilinochchi</option>
+                              <option>Mannar</option>
+                              <option>Mullaitivu</option>
+                              <option>Vavuniya</option>
+                              <option>Kegalle</option>
+                              <option>Ratnapura</option>
+                              <option>Galle</option>
+                              <option>Hambantota</option>
+                              <option>Matara</option>
+                              <option>Badulla</option>
+                              <option>Monaragala</option>
+                              <option>Colombo</option>
+                              <option>Gampaha</option>
+                              <option>Kalutara</option>
+                         </select>
+                    </div>
+
+                    <div class="input_group">
+                         <label>Courses <b>*</b> </label>
+                         <select name="courses" required>
+                              <option>Diploma in ICT</option>
+                              <option>Diploma in Human Resource Management</option>
+                              <option>Diploma in Business Management</option>
+                              <option>Diploma in Psychology and Counselling</option>
+                              <option>Diploma in English Language</option>
+                              <option>Bachelor in Psychology</option>
+                              <option>Bachelor in Business Administration</option>
+                              <option>Bachelor in IT</option>
+                         </select>
+                    </div>
+
+                    <div class="button">
+                         <input type="submit" value="Register" name="register">
+                    </div>
+
+               </div>
+          </form>
+          <!---------- REGISTRATION FORM END ----------->
+
+     </div>
+</body>
+</html>
